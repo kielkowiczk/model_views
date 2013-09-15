@@ -1,4 +1,4 @@
-Simple Ruby on Rails 4.0 application demonstrating unsing database views in ActiveRecord models. 
+Simple Ruby on Rails 4.0 application demonstrating unsing database views with ActiveRecord models. 
 
 Application consists of three tables populated with foo data and one view defined in databse.
 View was defined to ease using complex SQL stetment.
@@ -15,5 +15,5 @@ what's more there was created view in databse by issuing following SQL command:
 View is reflected by <tt> app/models/usa_universities.rb </tt>file.
 
 It's possible to access defined view by using following commands (instead of using comples SQL command):
-<tt>UsaUniversities.all</tt>
+* <tt>UsaUniversities.all</tt>
 <tt>=># <ActiveRecord::Relation [#<UsaUniversities country_id: 14, university_id: 8, name: "Harvard University", name:1: "USA", rating: 0.95>, #<UsaUniversities country_id: 14, university_id: 9, name: "John Hopkins University", name:1: "USA", rating: 0.96>]> </tt>
