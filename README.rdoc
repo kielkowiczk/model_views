@@ -1,0 +1,1 @@
+Simple Ruby on Rails 4.0 application demonstrating unsing database views in ActiveRecord models. 
