@@ -1,1 +1,14 @@
 Simple Ruby on Rails 4.0 application demonstrating unsing database views in ActiveRecord models. 
+
+
+
+There are following tables defined in database and their respective models in application code:
+* Countries
+* Universities
+* Ratings 
+
+what's more was created view in databse by issuing following command:
+
+<tt> create view usa_universities_with_rating_view as select u.country_id, r.university_id, u.name, c.name,r.rating from countries as c join universities as u on c.id=u.country_id join ratings as r on r.university_id = u.id where c.name = "USA"; </tt>
+
+View is reflected by <tt> app/models/usa_universities.rb </tt>file.
